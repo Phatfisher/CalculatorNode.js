@@ -1,0 +1,11 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Creating a calculator from node.js ",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ma Vang",
+  "license": "ISC"
+}
