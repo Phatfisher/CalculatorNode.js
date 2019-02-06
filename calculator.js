@@ -1,11 +1,15 @@
 const express = require("express"); 
+const bodyparser = require("body-parser"); 
 const app = express();
 
 app.get("/", function (req, res) {
-    res.send("Hello World!");
+    res.sendFile(__dirname + "/index.html");
 });
 app.get("/about", function (req, res) {
-    res.send("<h1>About Myself</h1><p>Some of my favorite hobbies include hunting and fishing.</p><p> I am also an inspiring web developer. Look out!!!</p>")
+    res.sendFile(__dirname + "/index.html");
+});
+app.post("/", function (req, res) {
+    res.send("Thanks for posting");
 });
 
 app.listen(3000, function () {
